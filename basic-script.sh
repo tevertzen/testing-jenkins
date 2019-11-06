@@ -5,3 +5,4 @@ echo "Today is $(date)"
 
 echo "This script is made by $NAME"
 
+echo "This script was succesful!"
