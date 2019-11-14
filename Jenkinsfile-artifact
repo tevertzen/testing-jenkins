@@ -17,7 +17,7 @@ pipeline {
             steps {
                 git "https://github.com/tevertzen/testing-jenkins.git"
                 sh "docker build ."
-                sh "docker save -o image.tar"
+                sh "docker save image.tar -o"
             }
         }
     }
