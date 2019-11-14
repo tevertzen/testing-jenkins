@@ -17,6 +17,7 @@ pipeline {
                 git "https://github.com/tevertzen/testing-jenkins.git"
                 sh "docker build ."
                 sh "docker save image.tar -o"
+                archiveArtifacts 'image.tar'
             }
         }
     }
